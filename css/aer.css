@@ -1,0 +1,379 @@
+/*
+#8addff
+Aer Version 0.1
+Copyright Darragh Kenny
+*/
+/*Index
+1: The Grid
+2: Typeography
+
+*/
+
+/* 
+    1:The Grid
+    ----------
+*/
+.wrap {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.col{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    
+}
+.grid {
+    color: #fff;
+    background: #8addff;
+    border-radius: .3rem;
+}
+
+@media (min-width: 400px) {
+    .wrap {
+        width: 85%;
+    }
+}
+@media (min-width: 550px) {
+    .wrap {
+        width: 80%;
+    }
+    .col:first-child {
+        margin-left: 0;
+    }
+    .col {
+        margin-left: 3.5%;
+    }
+    .col-1.col {
+        width: 5.125%;
+    }
+    .col-2.col {
+        width: 13.75%;
+    }
+    .col-3.col {
+        width: 22.375%;
+    }
+    .col-4.col {
+        width: 31%;
+    }
+    .col-5.col {
+        width: 39.625%;
+    }
+    .col-6.col {
+        width: 48.25%;
+    }
+    .col-7.col {
+        width: 56.875%;
+    }
+    .col-8.col {
+        width: 65.5%;
+    }
+    .col-9.col {
+        width: 74.125%;
+    }
+    .col-10.col {
+        width: 82.75%
+    }
+    .col-11.col {
+        width: 91.375%;
+    }
+    .col-12.col {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/* 
+    Off-set (coloumn width + gutter margin)
+    ---------------------------------------
+*/
+.offset-1.col{
+    margin-left: 8.625%;
+}
+.offset-2.col{
+    margin-left: 17.25%;
+}
+.offset-3.col{
+    margin-left: 25.875%;
+}
+.offset-4.col{
+    margin-left: 34.5%;
+}
+.offset-5.col{
+    margin-left: 43.125%;
+}
+.offset-6.col{
+    margin-left: 51.75%;
+}
+.offset-7.col{
+    margin-left: 60.375%;
+}
+.offset-8.col{
+    margin-left: 69%;
+}
+.offset-9.col{
+    margin-left: 77.625%;
+}
+.offset-10.col{
+    margin-left: 86.25%;
+}
+.offset-11.col{
+    margin-left: 94.875%;
+}
+/*
+    Typeography
+    -----------
+*/
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body{
+    font-size: 1.5em; 
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: sans-serif, Arial;
+    color: #242424;
+   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 3.0rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+h5 {
+    font-size: 1.8rem;
+}
+h6 {
+    font-size: 1.5rem;
+}
+
+/*--- For Larger screens ---*/
+@media (min-width: 550px){
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 4.3rem;
+    }
+    h3 {
+        font-size: 3.8rem;
+    }
+    h4 {
+        font-size: 3.0rem;
+    }
+    h5 {
+        font-size: 2.5rem;
+    }
+    h6 {
+        font-size: 1.5rem;
+    }
+}
+
+/*
+    Links
+    -----
+*/
+a {
+    text-decoration: underline 2px solid #32c0ea;
+    color: #0087ea;
+}
+a:hover {
+    color: #0048ea;
+}
+/*
+    Lists
+    -----
+*/
+ul {
+    list-style: square inside;
+}
+ol {
+    list-style: lower-roman inside;
+}
+ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; 
+}
+li {
+    margin-bottom: 1rem;
+}
+/*
+    Buttons
+    -------
+*/
+
+.btn,
+button, 
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    height: 4.5rem;
+    padding: 0 25px;
+    margin: .3rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8addff;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    border-radius: .3rem;
+}
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+    background-color: transparent;
+    border-color: #8addff;
+    color: #242424; 
+}
+.btn.btn-main,
+button.btn-main, 
+input[type="submit"].btn-main,
+input[type="button"].btn-main,
+input[type="reset"].btn-main {
+    background-color: transparent;
+    border: 2px solid #8addff;
+    color: #242424;
+
+}
+.btn.btn-main:hover,
+button.btn-main:hover,
+input[type="submit"].btn-main:hover,
+input[type="button"].btn-main:hover,
+input[type="reset"].btn-main:hover,
+.btn.btn-main:focus,
+button.btn-main:focus,
+input[type="submit"].btn-main:focus,
+input[type="button"].btn-main:focus,
+input[type="reset"].btn-main:focus {
+    background-color: #8addff;
+    color: #fff;
+}
+
+/*
+    Forms
+    -----
+*/
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+textarea,
+select {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+    color: #727272;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin-bottom: .5rem;
+    outline: none;  /* This removes the default box-shadow */
+    -webkit-transition: all 0.30s ease-in-out;  /* Slight transition when clicked to focus */
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='search']:focus,
+input[type='text']:focus,
+input[type='tel']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+textarea,
+select {
+    box-shadow: 0 0 5px #8addff;
+    border: 2px solid #8addff;
+    
+}
+label,
+ledgend {
+    display: block;
+    margin-bottom: .3rem;
+    font-weight: 500;
+}
+
+/*
+    Extras
+    ------
+*/
+.center {
+    text-align: center;
+}
+.full {
+    width: 100%;
+}
+.background-img {
+    
+}
+.responsive-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.pull-right {
+    float: right;
+}
+/*
+    ClearFix
+    --------
+*/
+.wrap:after,   
+.row:after {
+    display: table;
+    content: " ";
+    clear: both;
+    margin-bottom: .5em;
+}
+/*
+
+
+
+
+
+
+
+
