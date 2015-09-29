@@ -357,6 +357,10 @@ ledgend {
 .pull-right {
     float: right;
 }
+.center-img {
+    display: block;
+    margin: auto;
+}
 /*
     ClearFix
     --------
